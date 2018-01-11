@@ -19,9 +19,9 @@ var (
 // 一般类型组
 type (
 	newType int
-	type1 float32
-	type2 string
-	type3 byte
+	type1   float32
+	type2   string
+	type3   byte
 )
 
 func main() {

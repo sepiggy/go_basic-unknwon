@@ -6,9 +6,9 @@ import "fmt"
  * 类型别名
  */
 type (
-	byte uint8
-	rune int32
-	文本 string
+	byte     uint8
+	rune     int32
+	文本       string
 	ByteSize int64
 )
 
