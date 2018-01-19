@@ -35,14 +35,15 @@ func main() {
 	Disconnect(phoneConnecter)
 }
 
-// 空接口
+// 常规接口使用类型断言
+// 空接口使用type-switch
 func Disconnect(connecter interface{}) {
-	// 类型断言
+	// 类型断言 type ok-idiom
 	// if pc, ok := connecter.(PhoneConnecter); ok {
 	//	fmt.Println("Disconnected ...", pc.name)
 	//	return
-	//}
-	//fmt.Println("Unknown device ...")
+	// }
+	// fmt.Println("Unknown device ...")
 
 	// type-switch
 	switch v := connecter.(type) {
